@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation</title>
+    <style>
+        .box{
+            height:200px; width:200px;
+            border: 5px solid black;
+            transition-duration: 1s;
+        }
+        #box1{
+            background-color: aqua;
+        }
+        #box2{
+            background-color: beige;
+        }
+        #box3{
+            background-color: cadetblue;
+        }
+        #box4{
+            background-color: coral;
+        }
+
+        /* ROTATE */
+
+        #box1:hover{
+            transform: rotate(45deg);
+        }
+        #box2:hover{
+            transform:rotate(270deg);
+        }
+        #box3:hover{
+            transform:rotatex(45deg);
+        }
+        #box4:hover{
+            transform: rotatey(60deg);
+        }
+
+        /* SCALE */
+
+       #box1:hover{
+            transform: scale(0.5);
+        }
+        #box2:hover{
+            transform:scale(2);
+        }
+        #box3:hover{
+            transform:scalex(4);
+        }
+        #box4:hover{
+            transform: scaley(3);
+        }
+
+        /* TRANSLATE */
+
+        #box1:hover{
+            transform: translate(50px);
+        }
+        #box2:hover{
+            transform:translate(50px,50px);
+        }
+        #box3:hover{
+            transform:translatex(50px);
+        }
+        #box4:hover{
+            transform: translatey(50px);
+        }
+
+        /* SKEW */
+
+        #box1.hover{
+            transform:skew(60deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">A</div>
+    <div id="box2" class="box">B</div>
+    <div id="box3" class="box">C</div>
+    <div id="box4" class="box">D</div>
+</body>
+</html>

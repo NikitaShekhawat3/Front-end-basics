@@ -1,0 +1,24 @@
+#button1{
+    height:10px; width:20px;
+    font-size: 3px;
+    background-color: pink;
+    border: 1px solid black;
+    border-radius: 10%;
+
+    /* Transition */
+
+    transition-property: all;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s;
+}
+#button1:hover{
+    height:13px; width:25px;
+    border:2px solid brown;
+    background-color: burlywood;
+}
+#button1:active{
+    height:13px; width:25px;
+    border:2px solid brown;
+    background-color: beige;
+}
