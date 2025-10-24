@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{ 
+            margin:0; padding:0; border:0;
+        }
+        #check{
+            height:40px; width:50px;
+            background-color: yellow;
+            color:red;
+           /* padding: 20px 20px 20px 20px ; */
+        }
+        #click{
+            height: fit-content; width: fit-content;
+            background-color: dimgrey;
+            margin: 20px 20px 20px 20px;
+            border: 5px dashed blue;
+            border-radius: 5px;
+            box-sizing:border-box;
+            /*box-sizing:content-box (by default);*/
+        }
+    </style>
+</head>
+<body>
+    <div id="check">Padding checker</div> <br>
+    <button id="click">Login</button>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        /* make a flex container for the boxes; each .box is a flex item */
+        .container{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: flex-start;
+        }
+        .box{
+            height:100px; width:100px;
+            background-color: pink;
+            /* remove display:flex from the item - the parent should be the flex container */
+        }
+        @media screen and (min-width:100px) {
+            .box{
+            border: 5px solid black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1" class="box"> A </div>
+        <div id="box2" class="box"> B </div>
+        <div id="box3" class="box"> C </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>units & bg image</title>
+    <style>
+        .box{ height:50px; width:50px;}
+        #box1{ background-color:red; visibility: hidden;}
+        #box2{ background-color:blue; visibility: collapse;}
+        #box3{ background-color:green;}
+
+        #icon{
+            height:50px;
+            width:50px;
+            /* background-image:url(Images/pratibha.jpg);
+            background-size: contain;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-attachment: fixed; */
+            background: green url(Images/photo.png) no-repeat fixed center;
+        }
+    </style>
+</head>
+<body>
+    <div id="icon"></div>
+
+    <div id="box1" class="box"> A </div>
+    <div id="box2" class="box"> B </div>
+    <div id="box3" class="box"> C </div>
+    
+</body>
+</html>

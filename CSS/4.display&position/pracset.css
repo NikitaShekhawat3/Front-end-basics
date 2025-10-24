@@ -1,0 +1,46 @@
+*{
+    margin:0; padding:0;
+}
+nav{
+    margin:5px; padding:5px;
+}
+nav a{
+    text-decoration: none;
+    margin-left: 20px;
+}
+header{
+    background-color: aquamarine;
+}
+#div1{
+    height:30px; width:50px;
+    background-color: blueviolet;
+    border:5px;
+    border-radius: 50%;
+    
+}
+.boxes{
+    height:80px; width:80px;
+    background-color: aqua;
+    display: inline-block;
+}
+
+#container{
+    border:10px; margin:5px;
+}
+#div2{
+    float: right;
+}
+#div4{
+    float: left;
+}
+#div5{
+    height:100px; width:100px;
+    background-color: aqua;
+    position: fixed; 
+    right:0px;
+}
+footer{
+    background-color: cornsilk;
+    position:fixed;
+    bottom:10px;
+}

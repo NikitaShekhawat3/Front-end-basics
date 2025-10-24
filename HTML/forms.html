@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <form action="/contact-me" method="post"> 
+        Username : <input type="text" placeholder="Username or email" required> <br>
+        Password : <input type="password" placeholder="Enter password" required>
+        <input type="submit" value="submit"> <br>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" value="john"> <br>
+        <label for="day"> Date: </label>
+        <input type="date" id="day"> <br>
+        File: <input type="file"> <br>
+        Colour: <input type="color"> <br>
+        Range: <input type="range"> <br>
+        Button: <input type="button" value="done"> <br>
+
+        <p> Select Gender</p>
+        <label for="m">Male</label>
+        <input type="radio" id="m" name="gender" value="Male"> <br>
+        <label for="f">Female</label>
+        <input type="radio" id="f" name="gender" value="Female"> <br>
+        <label for="o">Other</label>
+        <input type="radio" id="o" name="gender" value="Other">
+
+        <p> Fruits to buy: </p>
+        <label for="a">Apple:</label>
+        <input type="checkbox" id="a" name="fruits" value="apple"> <br>
+        <label for="b">Banana:</label>
+        <input type="checkbox" id="b" name="fruits" value="banana"><br>
+        <label for="g">Guavava:</label>
+        <input type="checkbox" id="g" name="fruits" value="guavava">
+
+        <p> Choose your loc: </p>
+        <select name="Country" id="country">
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="London">London</option>
+        </select>
+        <hr>
+        <textarea name="story" rows="5" cols="50"> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptas, corporis corrupti, perspiciatis vitae facere sapiente amet minima totam porro cum saepe nulla eius dolorem sunt repudiandae sint eaque dignissimos harum, optio animi quibusdam suscipit? Nemo, eaque facere iusto temporibus voluptas earum explicabo accusantium dolores quos eos saepe reprehenderit fugit modi vel? Qui ipsam dignissimos, quos blanditiis, quis voluptas minima obcaecati maxime, adipisci mollitia rerum similique nihil? Nobis soluta est minus, quidem excepturi itaque quisquam id fugit adipisci praesentium maxime deserunt mollitia dicta beatae recusandae sunt architecto in, voluptatem officia alias assumenda expedita facilis reprehenderit nemo. Culpa ipsam sunt alias?
+        </textarea>
+        <hr>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YYq47MN3TZI?si=TJAnWtMHqhVyyhzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+        #honey{
+            font-size:30px;
+        }
+        #honey1{
+            font-size:25px;
+            color:red;
+        }
+        #honey3{
+            font-size:20px;
+            color:blue;
+            font-style:italic;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+        }
+        #outer{
+            font-size:25px;
+        }
+        #inner{
+            font-size:10px;
+        }
