@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WeMart — Sign in</title>
+  <link rel="stylesheet" href="WeMart.css" />
+</head>
+<body>
+  <main class="page" aria-label="WeMart sign in page">
+    <section class="card" aria-labelledby="signin-title">
+      <div class="brand">
+        <img src="weMart/Images/logo1.png" alt="WeMart logo" class="logo" />
+        <h1 id="signin-title">Sign in to WeMart</h1>
+        <p class="subtitle">Fresh groceries · Fast delivery · Great prices</p>
+      </div>
+
+      <form class="form" action="#" method="post" novalidate>
+        <label for="identifier" class="label">Email or phone</label>
+        <input id="identifier" name="identifier" type="text" inputmode="email"
+               placeholder="you@example.com or +91 98765 43210"
+               autocomplete="username" required class="input" />
+
+        <label for="password" class="label">Password</label>
+        <div class="password-row">
+          <input id="password" name="password" type="password" required
+                 placeholder="Enter your password" autocomplete="current-password" class="input" />
+          <button type="button" class="pwd-toggle" aria-pressed="false" aria-label="Show password">Show</button>
+        </div>
+
+        <div class="row between">
+          <label class="checkbox">
+            <input type="checkbox" name="remember" />
+            <span>Remember me</span>
+          </label>
+          <a class="link" href="#">Forgot password?</a>
+        </div>
+
+        <button class="btn primary" type="submit">Sign in</button>
+
+        <div class="divider" aria-hidden="true"><span>or</span></div>
+
+        <button class="btn alt" type="button" aria-label="Continue with Google">
+          Continue with Google
+        </button>
+
+        <p class="signup">
+          New to WeMart?
+          <a class="link" href="#">Create an account</a>
+        </p>
+
+        <p class="legal">By signing in you agree to our <a href="#" class="link">Terms</a> and <a href="#" class="link">Privacy Policy</a>.</p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
