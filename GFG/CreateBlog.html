@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        nav{
+            display:flex;
+            text-align: center;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Welcome to The Blog
+        </h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#post">Post</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Introduction</h2>
+            <p>
+                HTML is the backbone of the web — the language that structures content and brings pages to life.
+                Yet many developers treat it as simple markup, missing techniques that improve accessibility, performance, and maintainability.
+                This post shows practical HTML patterns, semantic best practices, and tiny habits that make pages faster and more robust.
+                You'll leave with clear rules and examples to write cleaner, more accessible markup today.
+            </p>
+        </section>
+
+        <section id="about">
+            <h2>About me</h2>
+            <p>
+                Driven and adaptable B.E Computer Engineering student with a strong grasp of programming, networking, and
+                problem-solving. Quick to learn, quicker to execute, and not afraid to tackle complex challenges head-on. Known
+                for sharp analytical thinking, solid teamwork, and delivering results under pressure. Looking to channel my
+                technical skills into impactful projects and industry-level experience.
+            </p>
+        </section>
+
+        <section id="post">
+            <h2> Latest Blog Posts</h2>
+            <article>
+                <h3>HTML Tags</h3>
+                <p>
+                    HTML tags are the building blocks of web pages — markup wrapped in angle brackets (for example < p >, < a >, < div >) that define structure, meaning, and presentation. They usually come as opening and closing pairs that surround content and can include attributes (like href, id, or class) to supply extra information. Using semantic tags such as header, nav, main, article, and footer helps browsers, search engines, and assistive technologies understand your content, improving accessibility and SEO. Clean, properly nested tags and meaningful attributes make markup easier to maintain and lead to better performance and user experience.
+                </p>
+                <a href="https://www.geeksforgeeks.org/html/what-are-html-tags/">Read more</a>
+            </article>
+            <article>
+                <h3>HTML Color Styles</h3>
+                <p>
+                    HTML color styles are applied with CSS (properties like color and background-color) and accept named colors, hex (#RRGGBB / #RGB), rgb()/rgba(), and hsl()/hsla() values — plus CSS custom properties (variables) for reusable theme tokens. Prefer classes or external stylesheets over inline style attributes to keep markup clean and maintainable, and use variables to switch themes or implement dark mode with prefers-color-scheme. Always check color contrast (WCAG 2.1) for readable text and accessible UI, and consider system/semantic colors (e.g., color-scheme, system color keywords) to respect user settings. Small habits — meaningful names for variables, limiting palette, and testing on real devices — make color systems easier to scale and maintain.
+                </p>
+                <a href="https://www.geeksforgeeks.org/html/html-colors/">Read more</a>
+            </article>
+        </section>
+        <aside>
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href=#home>Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#post">Posts</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </aside>
+    </main>
+    <br>
+    <footer>
+        <p> &copy; My HTML Blog | Email:nshekhawat_be23@thapar.edu</p>
+    </footer>
+</body>
+</html>
