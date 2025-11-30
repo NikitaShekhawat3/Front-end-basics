@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WeMart — Groceries Delivered</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#" class="logo">
+          <span class="logo-text">WeMart</span>
+        </a>
+      </div>
+
+      <div class="search-bar" role="search">
+        <input id="searchInput" type="search" placeholder="Search products, e.g. bananas, milk..." aria-label="Search products" />
+        <button id="searchBtn" aria-label="Search">Search</button>
+      </div>
+
+      <nav class="header-actions" aria-label="User menu">
+        <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Menu">☰</button>
+      </nav>
+    </div>
+
+    <div class="departments-row container" id="departmentsRow" aria-hidden="false">
+      <button class="dept-btn active" data-dept="all">All</button>
+      <button class="dept-btn" data-dept="vegetables">Vegetables</button>
+      <button class="dept-btn" data-dept="fruits">Fruits</button>
+      <button class="dept-btn" data-dept="dairy">Dairy</button>
+      <button class="dept-btn" data-dept="bakery">Bakery</button>
+      <button class="dept-btn" data-dept="beverages">Beverages</button>
+      <button class="dept-btn" data-dept="household">Household</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="hero-image" src="https://cdn.prod.website-files.com/655f311269a83117a49c17c2/684686bd124616ca0aafa42e_657b1f41d90ebea19df30247_Food.jpg.png" alt="Banner image" loading="lazy" />
+      <div class="hero-overlay container">
+        <h1>Fresh groceries. Fast delivery.</h1>
+        <p>From farm-fresh produce to pantry essentials — delivered to your door.</p>
+        <div class="hero-ctas">
+          <a href="#departmentsGrid" class="btn primary" id="shopNowBtn">Shop Departments</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="departmentsGrid" class="container section">
+      <h2>Departments</h2>
+      <p class="muted">Tap a department to view products in that category.</p>
+
+      <div id="deptCards" class="departments-grid" aria-live="polite">
+
+        <article class="department-card" data-dept="vegetables" tabindex="0">
+          <img src="https://nwebkart.com/wp-content/uploads/2020/11/grocery_store_provider_in_india_e8xljj.jpg" alt="Vegetables" loading="lazy" />
+          <div class="dept-info">
+            <h3>Vegetables</h3>
+            <p class="muted">Fresh, seasonal greens and root vegetables.</p>
+          </div>
+        </article>
+
+        <article class="department-card" data-dept="fruits" tabindex="0">
+          <img src="https://media.istockphoto.com/id/489190757/photo/fruits-on-a-farm-market.jpg?s=612x612&w=0&k=20&c=FUmoul9nr9ja6HuLdDv1WW6VopSTgYmxYRiG9ulWvRU=" alt="Fruits" loading="lazy" />
+          <div class="dept-info">
+            <h3>Fruits</h3>
+            <p class="muted">Citrus, tropical & local fruit picks.</p>
+          </div>
+        </article>
+
+        <article class="department-card" data-dept="dairy" tabindex="0">
+          <img src="https://img.freepik.com/free-photo/dairy-products_114579-8756.jpg?semt=ais_hybrid&w=740&q=80" alt="Dairy" loading="lazy" />
+          <div class="dept-info">
+            <h3>Dairy</h3>
+            <p class="muted">Milk, yogurt, paneer and other essentials.</p>
+          </div>
+        </article>
+
+        <article class="department-card" data-dept="bakery" tabindex="0">
+          <img src="https://img.freepik.com/premium-photo/bunch-breads-some-bread-table_1304147-112918.jpg?semt=ais_hybrid&w=740&q=80" alt="Bakery" loading="lazy" />
+          <div class="dept-info">
+            <h3>Bakery</h3>
+            <p class="muted">Freshly baked breads and pastries.</p>
+          </div>
+        </article>
+
+        <article class="department-card" data-dept="beverages" tabindex="0">
+          <img src="https://www.shutterstock.com/image-photo/dubai-uae-18-may-2022-600nw-2568513101.jpg" alt="Beverages" loading="lazy" />
+          <div class="dept-info">
+            <h3>Beverages</h3>
+            <p class="muted">Tea, coffee, juices and more.</p>
+          </div>
+        </article>
+
+        <article class="department-card" data-dept="household" tabindex="0">
+          <img src="https://5.imimg.com/data5/SELLER/Default/2020/9/EC/AQ/SR/111495734/grocery-product-photography-service-500x500.jpg" alt="Household" loading="lazy" />
+          <div class="dept-info">
+            <h3>Household</h3>
+            <p class="muted">Cleaning, kitchen and daily essentials.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> WeMart — Grocery shopping made simple.</p>
+      <p class="muted">Built with care • Accessibility-minded • Responsive</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
